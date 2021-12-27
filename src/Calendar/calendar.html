@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Test Project</title>
+        <link rel="stylesheet" href="/Calendar/main.css">
+  </head>
+  <body>   
+    <div>
+      <button onclick="btnClicked()" id="LogOut">Log out</button>
+    </div> 
+    <div id="container">
+      <div id="container-header">
+        <div id="header">
+          <div id="monthDisplay"></div>
+          <div>
+            <button id="backButton">Back</button>
+            <button id="nextButton">Next</button>
+          </div>
+        </div>
+
+        <div id="weekdays">
+          <div>Sunday</div>
+          <div>Monday</div>
+          <div>Tuesday</div>
+          <div>Wednesday</div>
+          <div>Thursday</div>
+          <div>Friday</div>
+          <div>Saturday</div>
+          </div>
+          </div>
+            
+        <div id="calendar">
+
+        </div>
+    </div>
+       
+
+    <div id="newEventModal">
+            <h2>New Event</h2>
+            
+            <div>
+                <label>Title</label>
+                <input id="eventTitleInput" type="text" name="title">
+            </div>
+            <div>
+              <label>Description</label>
+              <input id="eventDescriptionInput" type="text" name="description">
+          </div>
+           
+            <div>
+              <button id="saveButton">Save</button>
+              <button id="cancelButton">Cancel</button>
+            </div>   
+    </div>
+      
+    <div id="deleteEventModal">
+            <h2>Event</h2>
+      
+            <p id="eventTextt">
+              <p id="eventTextd"></p>
+            </p>
+            
+            <button id="deleteButton">Delete</button>
+              
+            <button id="closeButton">Close</button>
+    </div>
+    <script>
+      function btnClicked(){
+        document.location.herf="localhost:4000/";
+      }
+    </script>
+    <div id="modalBackDrop"></div>
+    <script src="/Calendar/app.js"></script>
+  </body>
+</html>
